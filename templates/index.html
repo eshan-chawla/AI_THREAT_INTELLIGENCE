@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Main Page!</h1>
+        <div class="chat-window">
+            <div class="messages">
+                <!-- Chat messages will appear here -->
+                <p>Welcome to the chat!</p>
+            </div>
+            <div class="input-area">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
+            </div>
+        </div>
+        <p><a href="{{ url_for('login') }}">Logout</a></p>
+    </div>
+</body>
+</html>
